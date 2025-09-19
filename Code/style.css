@@ -1,0 +1,92 @@
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* base size for rem units */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(122, 228, 247);
+    display: flex; /* use flexbox to center */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    height: 100vh; /* full viewport height */
+}
+
+/* Main container */
+main {
+    background-color: #fff;
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3); /* soft shadow */
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: rgb(122, 228, 247);
+}
+
+/* Interface image */
+.header-image-container img {
+    width: 310px; /* Or a larger value for the image */
+    height: auto; /* Keep image proportion */
+    margin-bottom: 20px;
+}
+
+/* Text */
+p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: rgb(3, 38, 177);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Game lists */
+.games-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.games-list h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: rgb(122, 228, 247);
+}
+
+.games-list ol {
+    padding-left: 20px;
+}
+
+.games-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: flex; /* Adds Flexbox for alignment */
+    justify-content: space-between; /* Aligns text left and the image right */
+    align-items: center; /* Center the image verically */
+}
+
+/* Game Icons */
+.games-list li img {
+    width: 50px; /* A smaller value for the icons */
+    height: auto;
+}
